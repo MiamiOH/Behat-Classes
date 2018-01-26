@@ -1,6 +1,7 @@
 {
     "name": "miamioh/behat-classes",
     "description": "This is a shared class that is used to interact with objects used within Behat",
+    "license": "GPL-3.0-or-later",
     "require": {
         "behat/behat": "^3.4",
         "php": ">=7.0"
