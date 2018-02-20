@@ -28,12 +28,12 @@ class ScenarioTests extends TestCase {
     $this->assertEquals($tags,$this->scenario->getTags());
   }
 
-  public function testCanBeUsedAsCSVwith1Tag(): void {
+  public function testCanBeUsedAsCsvWith1Tag(): void {
     $tags = array('@testTag');
     $this->scenario = new Scenario('Test Form',$tags);
     $this->assertEquals(['Name'=>'Test Form','Tags'=>'@testTag'],$this->scenario->asArray());
   }
-  public function testCanBeUsedAsCSVwith2Tags(): void {
+  public function testCanBeUsedAsCsvWith2Tags(): void {
     $tags = array('@testTag','test2');
     $this->scenario = new Scenario('Test Form',$tags);
     $this->assertEquals(['Name'=>'Test Form','Tags'=>'@testTag,test2'],$this->scenario->asArray());
